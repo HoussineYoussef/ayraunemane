@@ -20,7 +20,9 @@ Deroulement
     - Plus le score est élevé plus la vitesse du jeu augmente avec un multiplicateur et une limite pour éviter que le jeu           soit impossible.
     - Le nombre d'obstacles augmentera en fonction du score.
     
-    Menu  
+   
+   Menu  
+   - Le decor commence à bouger et s'animer , le décors se déplace vers la gauche donnant un sentiment de mouvement du             personnage.
   - Nous aurons un menu avec plusieurs boutons; 
   - Nous aurons un bouton jouer qui lancera la partie
   - un bouton "comment jouer " , qui renvoie du texte pour comprendre comment jouer et avoir les touches. 
