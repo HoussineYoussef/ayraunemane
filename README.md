@@ -34,27 +34,15 @@ Deroulement
 - Quand le personnage meurt , cela représente la fin de la partie.
 
 
-  
-- Le decor commence à bouger et s'animer , le décors se déplace vers la gauche donnant un sentiment de mouvement du             personnage.
-- Il y aura un système de scoring s'incrémentant avec le temps.
-- Plus le score est élevé plus la vitesse du jeu augmente avec un multiplicateur et une limite pour éviter que le jeu           soit impossible.
-- Le nombre d'obstacles augmentera en fonction du score.
- 
- Un personnage
- -Le personnage peut se déplacer horizontalement et verticalement à vitesse constante.
- -Le personnage peut tirer des projectiles de style 'laser'
- -Il sera fait à partir d'un sprite changeable dans le menu.
- -Il aura plusieurs etat / déplacement / mort 
- -Quand le personnage touche un obstacle il meurt , la partie recommence.
-  
+
   
  Les obstacles;
--Les obstacles apparaissent de manière aléatoire avec une taille variante. 
--De forme ronde/carrée/images.
--Certains se déplacent de manière verticale et aléatoirement.
--D'autres seront fixe.
--Les obstacles peuvent être détruits par les tirs du personnage.
--Detruire un obstacle augmente le score.
+- Les obstacles apparaissent de manière aléatoire avec une taille variante. 
+- De forme ronde/carrée/images.
+- Certains se déplacent de manière verticale et aléatoirement.
+- D'autres seront fixe.
+- Les obstacles peuvent être détruits par les tirs du personnage.
+- Detruire un obstacle augmente le score.
     
     
     
