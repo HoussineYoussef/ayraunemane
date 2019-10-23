@@ -9,13 +9,13 @@ Les obstacles sont destructibles plus ou moins facilement en fonction du type d'
 
 To do ( obligatoire ) :
  
-  Déroulement ; 
-  
+  Déroulement ;
     - Une partie commence par l'apparition du personnage au milieu gauche de l'écran.
     - Le decor commence à bouger et s'animer , le décors se déplace vers la gauche donnant un sentiment de mouvement du             personnage.
     - Il y aura un système de scoring s'incrémentant avec le temps.
     - Plus le score est élevé plus la vitesse du jeu augmente avec un multiplicateur et une limite pour éviter que le jeu           soit impossible.
     - Le nombre d'obstacles augmentera en fonction du score.
+    **test**
 
   Menu ; 
   - Nous aurons un menu avec plusieurs boutons; 
