@@ -29,6 +29,9 @@ Deroulement
  Personnage 
 - Le personnage peut se déplacer horizontalement et verticalement à vitesse constante.
 - Il peut tirer des projectiles de type *laser'.
+- Il aura plusieurs etats , déplacement / vie / mort.
+- Il sera fait à partir d'un sprite représentant plusieurs positions.
+- Quand le personnage meurt , cela représente la fin de la partie.
 
 
   
