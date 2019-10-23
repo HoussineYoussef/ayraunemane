@@ -13,7 +13,7 @@ To do ( obligatoire ) :
   - Nous aurons un menu avec plusieurs boutons; 
   - Nous aurons un bouton jouer qui lancera la partie
   - un bouton "comment jouer " , qui renvoie du texte pour comprendre comment jouer et avoir les touches. 
-  - Si nous avons le temps nous ajouterons des boutons pour enlever la musique la remettre ou autre.
+  - Si nous avons le temps nous ajouterons des boutons pour enlever la musique la remettre ou autre.\n s
   
    
   
