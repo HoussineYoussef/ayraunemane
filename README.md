@@ -27,9 +27,8 @@ Deroulement
  - Si nous avons le temps nous ajouterons des boutons pour enlever la musique la remettre ou autre.
  
  Personnage 
-- Une partie commence par l'apparition du personnage au milieu gauche de l'écran.
--Le personnage peut se déplacer horizontalement et verticalement à vitesse constante.
--Oui oui 
+- Le personnage peut se déplacer horizontalement et verticalement à vitesse constante.
+
 
   
 - Le decor commence à bouger et s'animer , le décors se déplace vers la gauche donnant un sentiment de mouvement du             personnage.
