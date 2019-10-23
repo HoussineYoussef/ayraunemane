@@ -28,7 +28,7 @@ Deroulement
  
  Personnage 
 - Le personnage peut se déplacer horizontalement et verticalement à vitesse constante.
--Il peut tirer des projectiles de type *laser'.
+- Il peut tirer des projectiles de type *laser'.
 
 
   
