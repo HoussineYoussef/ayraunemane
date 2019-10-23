@@ -29,10 +29,8 @@ Deroulement
  Personnage 
 - Une partie commence par l'apparition du personnage au milieu gauche de l'écran.
 -Le personnage peut se déplacer horizontalement et verticalement à vitesse constante.
--Le personnage peut tirer des projectiles de style 'laser'
--Il sera fait à partir d'un sprite changeable dans le menu.
--Il aura plusieurs etat / déplacement / mort 
--Quand le personnage touche un obstacle il meurt , la partie recommence.
+-Oui oui 
+
   
 - Le decor commence à bouger et s'animer , le décors se déplace vers la gauche donnant un sentiment de mouvement du             personnage.
 - Il y aura un système de scoring s'incrémentant avec le temps.
