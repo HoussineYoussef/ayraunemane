@@ -8,11 +8,9 @@ Il y aura des obstacles qui apparaissent aléatoirement. Certains se déplacent 
 Les obstacles sont destructibles plus ou moins facilement en fonction du type d'obstacle.
 
 To do ( obligatoire ) :
- test ; 
-  -yikes
-  -yikes
  
   Déroulement ; 
+  
     - Une partie commence par l'apparition du personnage au milieu gauche de l'écran.
     - Le decor commence à bouger et s'animer , le décors se déplace vers la gauche donnant un sentiment de mouvement du             personnage.
     - Il y aura un système de scoring s'incrémentant avec le temps.
