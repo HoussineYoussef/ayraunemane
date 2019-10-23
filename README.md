@@ -1,4 +1,7 @@
 # ayraunemane
+================
+================
+
 Fait par : Youssef Houssine ; Khalil Naoufel 
 
 Ayraunemane est un petit jeu en javascript 
@@ -8,6 +11,7 @@ Il y aura des obstacles qui apparaissent aléatoirement. Certains se déplacent 
 Les obstacles sont destructibles plus ou moins facilement en fonction du type d'obstacle.
 
 To do ( obligatoire ) :
+=======================
  
   Déroulement ;
     - Une partie commence par l'apparition du personnage au milieu gauche de l'écran.
@@ -27,7 +31,7 @@ To do ( obligatoire ) :
  
     
   Un personnage qui se déplace et possède une hitbox;
-    *-Le personnage peut se déplacer horizontalement et verticalement à vitesse constante.
+    -Le personnage peut se déplacer horizontalement et verticalement à vitesse constante.
     -Le personnage peut tirer des projectiles de style 'laser'
     -Il sera fait à partir d'un sprite changeable dans le menu.
     -Il aura plusieurs etat / déplacement / mort 
