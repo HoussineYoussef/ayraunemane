@@ -26,10 +26,7 @@ Deroulement
  - un bouton "comment jouer " , qui renvoie du texte pour comprendre comment jouer et avoir les touches. 
  - Si nous avons le temps nous ajouterons des boutons pour enlever la musique la remettre ou autre.
  
-Personnage
--Le person blablabla
- 
- Un personnage qui se déplace et possède une hitbox
+ Un personnage
  -Le personnage peut se déplacer horizontalement et verticalement à vitesse constante.
  -Le personnage peut tirer des projectiles de style 'laser'
  -Il sera fait à partir d'un sprite changeable dans le menu.
