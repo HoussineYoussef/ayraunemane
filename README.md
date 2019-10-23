@@ -12,8 +12,7 @@ Les obstacles sont destructibles plus ou moins facilement en fonction du type d'
 
 To do ( obligatoire ) :
 =======================
- 
-  Déroulement ;
+Deroulement 
     - Une partie commence par l'apparition du personnage au milieu gauche de l'écran.
     - Le decor commence à bouger et s'animer , le décors se déplace vers la gauche donnant un sentiment de mouvement du             personnage.
     - Il y aura un système de scoring s'incrémentant avec le temps.
@@ -21,7 +20,7 @@ To do ( obligatoire ) :
     - Le nombre d'obstacles augmentera en fonction du score.
     
 
-  Menu ; 
+  Menu  
   - Nous aurons un menu avec plusieurs boutons; 
   - Nous aurons un bouton jouer qui lancera la partie
   - un bouton "comment jouer " , qui renvoie du texte pour comprendre comment jouer et avoir les touches. 
@@ -31,8 +30,8 @@ To do ( obligatoire ) :
  
     
   Un personnage qui se déplace et possède une hitbox;
-    1.-Le personnage peut se déplacer horizontalement et verticalement à vitesse constante.
-    2.-Le personnage peut tirer des projectiles de style 'laser'
+    -Le personnage peut se déplacer horizontalement et verticalement à vitesse constante.
+    -Le personnage peut tirer des projectiles de style 'laser'
     -Il sera fait à partir d'un sprite changeable dans le menu.
     -Il aura plusieurs etat / déplacement / mort 
     -quand le personnage touche un obstacle il meurt , la partie recommence.
