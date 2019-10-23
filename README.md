@@ -25,13 +25,13 @@ Deroulement
  - Nous aurons un bouton jouer qui lancera la partie
  - un bouton "comment jouer " , qui renvoie du texte pour comprendre comment jouer et avoir les touches. 
  - Si nous avons le temps nous ajouterons des boutons pour enlever la musique la remettre ou autre.
-     
-Un personnage qui se déplace et possède une hitbox
--Le personnage peut se déplacer horizontalement et verticalement à vitesse constante.
--Le personnage peut tirer des projectiles de style 'laser'
--Il sera fait à partir d'un sprite changeable dans le menu.
--Il aura plusieurs etat / déplacement / mort 
--Quand le personnage touche un obstacle il meurt , la partie recommence.
+ 
+ Un personnage qui se déplace et possède une hitbox
+ -Le personnage peut se déplacer horizontalement et verticalement à vitesse constante.
+ -Le personnage peut tirer des projectiles de style 'laser'
+ -Il sera fait à partir d'un sprite changeable dans le menu.
+ -Il aura plusieurs etat / déplacement / mort 
+ -Quand le personnage touche un obstacle il meurt , la partie recommence.
   
   
  Les obstacles;
