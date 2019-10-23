@@ -14,7 +14,9 @@ To do ( obligatoire ) :
   - Nous aurons un bouton jouer qui lancera la partie
   - un bouton "comment jouer " , qui renvoie du texte pour comprendre comment jouer et avoir les touches. 
   - Si nous avons le temps nous ajouterons des boutons pour enlever la musique la remettre ou autre.
-
+  
+  
+  
   Déroulement d'une partie; 
     - Une partie commence par l'apparition du personnage au milieu gauche de l'écran.
     -Le decor commence à bouger et s'animer , le décors se déplace vers la gauche donnant un sentiment de mouvement du            personnage.
