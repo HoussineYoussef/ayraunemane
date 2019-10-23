@@ -1,6 +1,6 @@
 # ayraunemane
 ================
-================
+
 
 Fait par : Youssef Houssine ; Khalil Naoufel 
 
@@ -31,8 +31,8 @@ To do ( obligatoire ) :
  
     
   Un personnage qui se déplace et possède une hitbox;
-    -Le personnage peut se déplacer horizontalement et verticalement à vitesse constante.
-    -Le personnage peut tirer des projectiles de style 'laser'
+    1.-Le personnage peut se déplacer horizontalement et verticalement à vitesse constante.
+    2.-Le personnage peut tirer des projectiles de style 'laser'
     -Il sera fait à partir d'un sprite changeable dans le menu.
     -Il aura plusieurs etat / déplacement / mort 
     -quand le personnage touche un obstacle il meurt , la partie recommence.
