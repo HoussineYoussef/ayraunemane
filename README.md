@@ -29,21 +29,21 @@ Deroulement
    
  
     
-  Un personnage qui se déplace et possède une hitbox;
-    -Le personnage peut se déplacer horizontalement et verticalement à vitesse constante.
-    -Le personnage peut tirer des projectiles de style 'laser'
-    -Il sera fait à partir d'un sprite changeable dans le menu.
-    -Il aura plusieurs etat / déplacement / mort 
-    -quand le personnage touche un obstacle il meurt , la partie recommence.
+Un personnage qui se déplace et possède une hitbox;
+-Le personnage peut se déplacer horizontalement et verticalement à vitesse constante.
+-Le personnage peut tirer des projectiles de style 'laser'
+-Il sera fait à partir d'un sprite changeable dans le menu.
+-Il aura plusieurs etat / déplacement / mort 
+-quand le personnage touche un obstacle il meurt , la partie recommence.
   
   
-  Les obstacles;
-    -Les obstacles apparaissent de manière aléatoire avec une taille variante. 
-    -De forme ronde/carrée/images.
-    -Certains se déplacent de manière verticale et aléatoirement.
-    - d'autres seront fixe.
-    -Les obstacles peuvent être détruits par les tirs du personnage.
-    -Detruire un obstacle augmente le score.
+ Les obstacles;
+-Les obstacles apparaissent de manière aléatoire avec une taille variante. 
+-De forme ronde/carrée/images.
+-Certains se déplacent de manière verticale et aléatoirement.
+-D'autres seront fixe.
+-Les obstacles peuvent être détruits par les tirs du personnage.
+-Detruire un obstacle augmente le score.
     
     
     
