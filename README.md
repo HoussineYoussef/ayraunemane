@@ -15,7 +15,7 @@ To do ( obligatoire ) :
     - Il y aura un système de scoring s'incrémentant avec le temps.
     - Plus le score est élevé plus la vitesse du jeu augmente avec un multiplicateur et une limite pour éviter que le jeu           soit impossible.
     - Le nombre d'obstacles augmentera en fonction du score.
-    **test**
+    
 
   Menu ; 
   - Nous aurons un menu avec plusieurs boutons; 
@@ -27,7 +27,7 @@ To do ( obligatoire ) :
  
     
   Un personnage qui se déplace et possède une hitbox;
-    -Le personnage peut se déplacer horizontalement et verticalement à vitesse constante.
+    *-Le personnage peut se déplacer horizontalement et verticalement à vitesse constante.
     -Le personnage peut tirer des projectiles de style 'laser'
     -Il sera fait à partir d'un sprite changeable dans le menu.
     -Il aura plusieurs etat / déplacement / mort 
