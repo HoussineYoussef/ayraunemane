@@ -2,7 +2,7 @@
 
 
 
-Fait par : Youssef Houssine ; Khalil Naoufel 
+*Fait par : Youssef Houssine ; Khalil Naoufel* 
 
 Ayraunemane est un petit jeu en javascript 
 Il s'agit d'un petit jeu style runner ou l'on peut incarner un IronMan 
