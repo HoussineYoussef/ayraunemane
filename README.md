@@ -7,7 +7,10 @@ Le personnage pourra se déplacer horizontalement ainsi que verticalement.Il peu
 Il y aura des obstacles qui apparaissent aléatoirement. Certains se déplacent d'autres sont immobiles.
 Les obstacles sont destructibles plus ou moins facilement en fonction du type d'obstacle.
 
-To do ( obligatoire ) : 
+To do ( obligatoire ) :
+ test ; 
+  -yikes
+  -yikes
  
   Déroulement ; 
     - Une partie commence par l'apparition du personnage au milieu gauche de l'écran.
