@@ -16,7 +16,7 @@ Released under the MIT license: http://jsbin.mit-license.org
 
 </head>
 <body>
-  <canvas id="Canvas" width="400" height="400"> </canvas>
+  <canvas id="Canvas" width="1000" height="500" style="border:1px solid #000000;"> </canvas>
 <script id="jsbin-javascript">
 window.onload = init;
 window.addEventListener('keydown', handleKeydown, false);
@@ -54,6 +54,9 @@ function handleKeydown(evt) {
         case 39://droite
         pers.dx = 0;
         break;
+        case 32:
+        shoot();
+        break;
     }
 }
 
@@ -72,12 +75,37 @@ class perso {
     ctx.fillRect(this.x,this.y,30,30);
   }
   move(){
+    // gestion mouvement vertical du personnage 
     this.y += this.dy;
-    this.x += this.dx;
+    //dépasse vers le bas
+    if( this.y > 505 ){
    
+      this.y = -2;
+    } 
+    //dépasse vers le haut
+    if (this.y < -5){
+      this.y  = 502;
+    }
+    //Gestion du déplacement horizontal du personnage.
+    this.x += this.dx;
+    if(this.x > 970){
+      
+      this.x = 970;
+    }
+    if ( this.x < 0){
+      this.x = 0;
+    }
+    ////////////////////////////////////////////////////////
+  }
+  shoot(){
+   
+
   }
 }
 /////////////////////////////////////////////////////////////
+
+
+
 // classe obstacles apparition hasardeuse 
 class obstacle {
   constructor(x , y , dx , dy , ctx){
@@ -106,7 +134,9 @@ function anime60fps() {
   // obstacles 
   obs.draw_obstacle();
   obs.move_obstacle();
- 
+//////////////////////////////////////////////////////
+  
+  
   requestAnimationFrame(anime60fps);
   };
 
@@ -120,6 +150,7 @@ function init() {
   requestAnimationFrame(anime60fps);
   pers = new perso(300,180,0,0,ctx);
   obs = new obstacle( 200 , 100 , 1 , 0 , ctx);
+  
  
 }
   
