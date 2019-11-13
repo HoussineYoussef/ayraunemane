@@ -5,10 +5,15 @@ class obstacle {
     this.dx = dx;
     this.dy = dy;
     this.ctx = ctx;  
+    this.image = new Image();
+    this.image.src = 'missile.png';
+
+    //this.image.src = 'missile.jpg';
   }
   draw_obstacle(){
-    ctx.fillStyle = "blue"; 
-    ctx.fillRect(this.x,this.y,30,30);
+    ctx.drawImage(this.image, this.x, this.y,30,30);
+    //ctx.fillStyle = "blue"; 
+    //ctx.fillRect(this.x,this.y,30,30);
   }
   move_obstacle(){
     this.y += this.dy;
