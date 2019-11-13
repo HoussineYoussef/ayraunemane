@@ -58,18 +58,21 @@ function anime60fps() {
   
   if(gameStatus==0){
     m.menu();
-    //m.bouton_jouer();
+    
     
   }
-  else{
+  else if (gameStatus == 2){
+    
+    m.menu_fin();
+    
+
+  }
+  else if (gameStatus == 1){
     
   
   pers.draw();
   pers.move();
  pers.colide();
-  
-
-  
   
   // obstacles 
   obst.forEach(element => {

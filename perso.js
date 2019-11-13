@@ -45,7 +45,7 @@ class perso {
           pers.y < element.y +  29 &&
           29 + pers.y > element.y) {
            // collision détectée !
-           alert(element.x);
+           gameStatus = 2;
        }
         
       });
