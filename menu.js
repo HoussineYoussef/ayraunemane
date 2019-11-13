@@ -26,8 +26,8 @@ class menu{
 
       ctx.font = "30px Arial";
       ctx.fillStyle = "blue";
-      ctx.fillText("Press Enter to start",430, 175);
-  
+      ctx.fillText("Fin",430, 175);
+      
     }
     bouton_jouer(){
       gameStatus = 1;

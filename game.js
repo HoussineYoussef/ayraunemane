@@ -62,8 +62,10 @@ function anime60fps() {
     
   }
   else if (gameStatus == 2){
-    
+   
     m.menu_fin();
+    document.location.reload(true);
+ 
     
 
   }
@@ -72,7 +74,7 @@ function anime60fps() {
   
   pers.draw();
   pers.move();
- pers.colide();
+  pers.colide();
   
   // obstacles 
   obst.forEach(element => {
