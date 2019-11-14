@@ -8,7 +8,7 @@ class obstacle {
     this.image = new Image();
     this.image.src = 'missile.png';
 
-    //this.image.src = 'missile.jpg';
+    
   }
   draw_obstacle(){
     ctx.drawImage(this.image, this.x, this.y,30,30);
@@ -24,7 +24,9 @@ class obstacle {
     ///// réaparition si sort du cadre 
       if(this.x < -33){
         this.x = Math.floor(Math.random()*300 + 1000);
+        this.y = Math.floor(Math.random()*500);
       }
+      
       /// on évite que les obstacles se superposent
       obst.forEach(element => {
        
