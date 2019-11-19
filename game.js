@@ -5,6 +5,13 @@ window.addEventListener('keyup', handleKeyup, false);
 let canvas;
 const obst = [];
 var gameStatus=0;
+canvas = document.querySelector("#Canvas");
+  
+//context graphique
+ctx = canvas.getContext("2d");
+var background = new Image();
+background.src = "background.png";
+  canvas = document.querySelector("#Canvas");
 
 function handleKeydown(evt) {
     switch(evt.keyCode){
@@ -55,6 +62,7 @@ function handleKeydown(evt) {
 
 function anime60fps() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.drawImage(background,0,0); 
   
   if(gameStatus==0){
     m.menu();
@@ -94,10 +102,6 @@ function anime60fps() {
 
 function init() {
   
-  canvas = document.querySelector("#Canvas");
-  
-  //context graphique
-  ctx = canvas.getContext("2d");
   // après
   requestAnimationFrame(anime60fps);
   pers = new perso(300,180,0,0,ctx);

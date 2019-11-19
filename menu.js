@@ -1,17 +1,16 @@
 class menu{
     menu(){
   
-      //fond
-      ctx.fillStyle = "black"; 
-      ctx.fillRect(0,0,canvas.width,canvas.height);
-  
+            //fond
+            ctx.drawImage(background,0,0);   
       //bouton 
       ctx.fillStyle = "White";
-      ctx.fillRect(400,125,315,80);
+      ctx.fillRect(343,210,315,80);
 
       ctx.font = "30px Arial";
-      ctx.fillStyle = "blue";
-      ctx.fillText("Press Enter to start",430, 175);
+      ctx.fillStyle = "red";
+      ctx.fillText("Press Enter to start",370, 260);
+  
   
     }
     menu_fin(){
