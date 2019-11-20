@@ -22,7 +22,7 @@ class obstacle {
   repop_obstacle(){
     var compt = 0;
     ///// réaparition si sort du cadre 
-      if(this.x < -33){
+      if(this.x < -33 ){
         this.x = Math.floor(Math.random()*300 + 1000);
         this.y = Math.floor(Math.random()*500);
       }
@@ -41,5 +41,5 @@ class obstacle {
              }
          }
       });
-    };
   }
+}

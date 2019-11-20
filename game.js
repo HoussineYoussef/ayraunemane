@@ -11,7 +11,7 @@ canvas = document.querySelector("#Canvas");
 ctx = canvas.getContext("2d");
 var background = new Image();
 background.src = "background.png";
-  canvas = document.querySelector("#Canvas");
+  
 
 function handleKeydown(evt) {
     switch(evt.keyCode){
@@ -30,6 +30,9 @@ function handleKeydown(evt) {
         case 13:
         m.bouton_jouer()
         break;
+        case 32:
+        m.bouton_jouer()
+        break;
     }
 }
   function handleKeyup(evt) {
@@ -45,6 +48,11 @@ function handleKeydown(evt) {
         break;
         case 39://droite
         pers.dx = 0;
+        break;
+        case 32://droite
+        if (b.x > 1050){
+          b.shoot();
+        }
         break;
         
     }
@@ -62,7 +70,7 @@ function handleKeydown(evt) {
 
 function anime60fps() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.drawImage(background,0,0); 
+  ctx.drawImage(background,0,0); // on place le fond 
   
   if(gameStatus==0){
     m.menu();
@@ -83,13 +91,17 @@ function anime60fps() {
   pers.draw();
   pers.move();
   pers.colide();
-  
+  b.draw_bullet();
+  b.travel();
+  b.colide_bullet();
   // obstacles 
   obst.forEach(element => {
     element.draw_obstacle();
     element.move_obstacle();
     element.repop_obstacle();
+    
   });
+  
 }
   
   
@@ -106,8 +118,9 @@ function init() {
   requestAnimationFrame(anime60fps);
   pers = new perso(300,180,0,0,ctx);
   m = new menu();
+  b = new bullet (1100,-1000,7,ctx);
   
-  for(let i = 0; i < 50; i++) {
+  for(let i = 0; i < 40; i++) {
     obst[i] = new obstacle(
                           -1,
                             0,
