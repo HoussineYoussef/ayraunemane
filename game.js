@@ -10,7 +10,9 @@ canvas = document.querySelector("#Canvas");
 //context graphique
 ctx = canvas.getContext("2d");
 var background = new Image();
-background.src = "background.png"
+background.src = "background.png";
+var background_debut = new Image();
+background_debut.src = "background_debut.png";
 var background_fin = new Image();
 background_fin.src = "background_fin.png";
 
