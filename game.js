@@ -5,6 +5,7 @@ window.addEventListener('keyup', handleKeyup, false);
 let canvas;
 const obst = [];
 var gameStatus=0;
+var score=0;
 canvas = document.querySelector("#Canvas");
   
 //context graphique
@@ -75,7 +76,7 @@ function handleKeyup(evt) {
 
 function anime60fps() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.drawImage(background,0,0); // on place le fond 
+  
   
   if(gameStatus==0){
     m.menu();
@@ -89,8 +90,10 @@ function anime60fps() {
 
   }
   else if (gameStatus == 1){
-    
-  
+  ctx.drawImage(background,0,0); // on place le fond 
+  ctx.font = "30px Arial";
+  ctx.fillStyle = "red";
+  ctx.fillText("Score : " + score,10,30);
   pers.draw();
   pers.move();
   pers.colide();

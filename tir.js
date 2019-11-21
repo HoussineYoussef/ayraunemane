@@ -19,7 +19,7 @@ class bullet {
                     element.x = Math.floor(Math.random()*300 + 1000);
                     element.y = Math.floor(Math.random()*500);
                     this.x = 10000;
-                    
+                    score++;
                 }
         });
 
