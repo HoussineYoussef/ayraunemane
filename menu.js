@@ -24,6 +24,8 @@ class menu{
 
     ctx.font = "30px Arial";
     ctx.fillStyle = "red";
+    ctx.fillText("Score obtenu : " + score,10,30);
+    ctx.fillText("Temps de jeu : " + Math.round(seconds/60) +" secondes",300,30);
     ctx.fillText("Press Esc to restart",370, 260);
 
     

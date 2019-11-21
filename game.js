@@ -6,6 +6,8 @@ let canvas;
 const obst = [];
 var gameStatus=0;
 var score=0;
+var seconds=0;
+var milisecond=0;
 canvas = document.querySelector("#Canvas");
   
 //context graphique
@@ -90,10 +92,14 @@ function anime60fps() {
 
   }
   else if (gameStatus == 1){
+  seconds++;
+  milisecond++;
   ctx.drawImage(background,0,0); // on place le fond 
   ctx.font = "30px Arial";
   ctx.fillStyle = "red";
   ctx.fillText("Score : " + score,10,30);
+  ctx.fillText("Temps : " + Math.round(seconds/60),200,30);
+
   pers.draw();
   pers.move();
   pers.colide();
