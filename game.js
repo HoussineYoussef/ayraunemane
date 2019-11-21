@@ -10,52 +10,55 @@ canvas = document.querySelector("#Canvas");
 //context graphique
 ctx = canvas.getContext("2d");
 var background = new Image();
-background.src = "background.png";
-  
+background.src = "background.png"
+var background_fin = new Image();
+background_fin.src = "background_fin.png";
+
 
 function handleKeydown(evt) {
-    switch(evt.keyCode){
-        case 38://haut
-        pers.dy = -5;
-        break;
-        case 40://bas
-        pers.dy = 5;
-        break;
-        case 37://gauche
-        pers.dx = -5;
-        break;
-        case 39://droite
-        pers.dx = 5;
-        break;
-        case 13:
-        m.bouton_jouer()
-        break;
-        case 32:
-        m.bouton_jouer()
-        break;
-    }
-}
-  function handleKeyup(evt) {
-    switch(evt.keyCode){
-        case 38://haut
-        pers.dy = 0;
-        break;
-        case 40://bas
-        pers.dy = 0;
-        break;
-        case 37://gauche
-        pers.dx = 0;
-        break;
-        case 39://droite
-        pers.dx = 0;
-        break;
-        case 32://droite
-        if (b.x > 1050){
-          b.shoot();
+  switch(evt.keyCode){
+      case 38://haut
+      pers.dy = -5;
+      break;
+      case 40://bas
+      pers.dy = 5;
+      break;
+      case 37://gauche
+      pers.dx = -5;
+      break;
+      case 39://droite
+      pers.dx = 5;
+      break;
+      case 13:
+      m.bouton_jouer()
+      break;
+      case 32:
+        if (b.x > 1000){
+           b.shoot();
         }
-        break;
-        
-    }
+      break;
+  }
+}
+
+function handleKeyup(evt) {
+  switch(evt.keyCode){
+      case 38://haut
+      pers.dy = 0;
+      break;
+      case 40://bas
+      pers.dy = 0;
+      break;
+      case 37://gauche
+      pers.dx = 0;
+      break;
+      case 39://droite
+      pers.dx = 0;
+      break;
+      case 27://echap
+      document.location.reload(true);
+      break;
+      
+  }
 }
 
 
@@ -79,9 +82,7 @@ function anime60fps() {
   }
   else if (gameStatus == 2){
    
-    m.menu_fin();
-    document.location.reload(true);
- 
+    m.menu_fin(); 
     
 
   }
