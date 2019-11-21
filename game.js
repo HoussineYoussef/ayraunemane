@@ -105,6 +105,7 @@ function anime60fps() {
     element.draw_obstacle();
     element.move_obstacle();
     element.repop_obstacle();
+    element.boost();
     
   });
   

@@ -42,4 +42,8 @@ class obstacle {
          }
       });
   }
+  boost(){
+    this.dx += -0.0005;
+
+  }
 }
