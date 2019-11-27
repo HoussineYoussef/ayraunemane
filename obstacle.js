@@ -6,7 +6,7 @@ class obstacle {
     this.dy = dy;
     this.ctx = ctx;  
     this.image = new Image();
-    this.image.src = 'missile.png';
+    this.image.src = 'ressource/missile.png';
 
     
   }
@@ -32,8 +32,8 @@ class obstacle {
        
           if (this.x < element.x +  33 &&
             this.x + 33 > element.x &&
-            this.y < element.y +  33 &&
-            33 + this.y > element.y) {
+            this.y < element.y +  22 &&
+            22 + this.y > element.y) {
              // collision détectée !
              compt ++;
              if (compt > 1){

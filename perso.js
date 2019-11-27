@@ -42,8 +42,8 @@ class perso {
         //ligne à changer en fonction du sprite 
         if (pers.x < element.x +  29 &&
           pers.x + 29 > element.x &&
-          pers.y < element.y +  29 &&
-          29 + pers.y > element.y) {
+          pers.y < element.y +  24 &&
+          24 + pers.y > element.y) {
            // collision détectée !
            gameStatus = 2;
        }
