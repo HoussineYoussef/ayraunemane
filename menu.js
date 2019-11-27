@@ -1,8 +1,14 @@
 class menu{
+  constructor(){
+    this.background_debut = new Image();
+    this.background_debut.src = "ressource/background_debut.png";
+    this.background_fin = new Image();
+    this.background_fin.src = "ressource/background_fin.png";
+  }
   menu(){
     
     //fond
-    ctx.drawImage(background_debut,0,0 , 1000,500);   
+    ctx.drawImage(this.background_debut,0,0 , 1000,500);   
     //bouton 
     ctx.fillStyle = "rgba(255, 255, 255, 0.5)";
     ctx.fillRect(343,280,315,80);
@@ -16,7 +22,7 @@ class menu{
   menu_fin(){
 
     //fond
-    ctx.drawImage(background_fin,0,0, 1000,500);
+    ctx.drawImage(this.background_fin,0,0, 1000,500);
 
     //bouton 
     ctx.fillStyle = "rgba(255, 255, 255, 0.5)";

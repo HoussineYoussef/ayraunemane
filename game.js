@@ -14,10 +14,6 @@ canvas = document.querySelector("#Canvas");
 ctx = canvas.getContext("2d");
 var background = new Image();
 background.src = "ressource/background.png";
-var background_debut = new Image();
-background_debut.src = "ressource/background_debut.png";
-var background_fin = new Image();
-background_fin.src = "ressource/background_fin.png";
 
 
 function handleKeydown(evt) {
