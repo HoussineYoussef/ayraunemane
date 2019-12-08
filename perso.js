@@ -6,12 +6,23 @@ class perso {
       this.dx = dx;
       this.dy = dy;
       this.ctx = ctx;
+      this.imageShoot = new Image();
+    this.imageShoot.src = 'ressource/ironman_shoot.png';
+    this.imageNeutre = new Image();
+    this.imageNeutre.src = 'ressource/ironman_neutre.png';
+    this.imageMove = new Image();
+    this.imageMove.src = 'ressource/ironman_move.png';
       
       
     }
-    draw(){
-      ctx.fillStyle = "red"; 
-      ctx.fillRect(this.x,this.y,30,30);
+    draw_neutre(){
+      ctx.drawImage(this.imageNeutre, this.x, this.y,30,30);
+    }
+    draw_shooting(){
+      ctx.drawImage(this.imageShoot, this.x, this.y-2,34,34);
+    }
+    draw_move(){
+      ctx.drawImage(this.imageMove, this.x, this.y,33,33);
     }
     move(){
       // gestion mouvement vertical du personnage 

@@ -9,8 +9,7 @@ class bullet {
     }
       draw_bullet(){
         ctx.drawImage(this.image, this.x, this.y,60,13);
-       // ctx.fillStyle = "white"; 
-        //ctx.fillRect(this.x,this.y,30,30);
+       
       }
       
       colide_bullet(){
