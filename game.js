@@ -19,16 +19,16 @@ background.src = "ressource/background.png";
 function handleKeydown(evt) {
   switch(evt.keyCode){
       case 38://haut
-      pers.dy = -5;
+      pers.dy = -3;
       break;
       case 40://bas
-      pers.dy = 5;
+      pers.dy = 3;
       break;
       case 37://gauche
-      pers.dx = -5;
+      pers.dx = -3;
       break;
       case 39://droite
-      pers.dx = 5;
+      pers.dx = 3;
       break;
       case 13:
       m.bouton_jouer()
