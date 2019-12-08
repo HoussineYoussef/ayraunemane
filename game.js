@@ -16,7 +16,6 @@ var background = new Image();
 background.src = "ressource/background.png";
 
 
-
 function handleKeydown(evt) {
   switch(evt.keyCode){
       case 38://haut
