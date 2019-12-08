@@ -1,8 +1,17 @@
 class menu{
+  constructor(){
+    this.background_debut = new Image();
+    this.background_debut.src = "ressource/background_debut.png";
+    this.background_fin = new Image();
+    this.background_fin.src = "ressource/background_fin.png";
+    this.music_debut = new Audio("ressource/soundtrack_debut.mp3");
+    this.musique_fin = new Audio("ressource/soundtrack_fin.mp3");
+  }
   menu(){
+    this.music_debut.play();
     
     //fond
-    ctx.drawImage(background_debut,0,0 , 1000,500);   
+    ctx.drawImage(this.background_debut,0,0 , 1000,500);   
     //bouton 
     ctx.fillStyle = "rgba(255, 255, 255, 0.5)";
     ctx.fillRect(343,280,315,80);
@@ -14,9 +23,9 @@ class menu{
 
   }
   menu_fin(){
-
+    this.musique_fin.play();
     //fond
-    ctx.drawImage(background_fin,0,0, 1000,500);
+    ctx.drawImage(this.background_fin,0,0, 1000,500);
 
     //bouton 
     ctx.fillStyle = "rgba(255, 255, 255, 0.5)";
@@ -32,6 +41,9 @@ class menu{
     
   }
   bouton_jouer(){
+    this.music_debut.pause();
+    
     gameStatus = 1;
+
   }
 }

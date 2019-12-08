@@ -13,26 +13,24 @@ canvas = document.querySelector("#Canvas");
 //context graphique
 ctx = canvas.getContext("2d");
 var background = new Image();
-background.src = "background.png";
-var background_debut = new Image();
-background_debut.src = "background_debut.png";
-var background_fin = new Image();
-background_fin.src = "background_fin.png";
+background.src = "ressource/background.png";
+
 
 
 function handleKeydown(evt) {
   switch(evt.keyCode){
       case 38://haut
-      pers.dy = -5;
+      pers.dy = -3;
       break;
       case 40://bas
-      pers.dy = 5;
+      pers.dy = 3;
       break;
       case 37://gauche
-      pers.dx = -5;
+      pers.dx = -3;
+      
       break;
       case 39://droite
-      pers.dx = 5;
+      pers.dx = 3;
       break;
       case 13:
       m.bouton_jouer()
@@ -40,6 +38,7 @@ function handleKeydown(evt) {
       case 32:
         if (b.x > 1000){
            b.shoot();
+           
         }
       break;
   }
@@ -49,15 +48,19 @@ function handleKeyup(evt) {
   switch(evt.keyCode){
       case 38://haut
       pers.dy = 0;
+      
       break;
       case 40://bas
       pers.dy = 0;
+      
       break;
       case 37://gauche
       pers.dx = 0;
+      
       break;
       case 39://droite
       pers.dx = 0;
+      
       break;
       case 27://echap
       document.location.reload(true);
@@ -92,6 +95,7 @@ function anime60fps() {
 
   }
   else if (gameStatus == 1){
+   
   seconds++;
   milisecond++;
   ctx.drawImage(background,0,0); // on place le fond 
@@ -99,13 +103,25 @@ function anime60fps() {
   ctx.fillStyle = "red";
   ctx.fillText("Score : " + score,10,30);
   ctx.fillText("Temps : " + Math.round(seconds/60),200,30);
-
-  pers.draw();
+  //Fonction pour dessiner ! 
+  if (b.x < pers.x + 130){
+    pers.draw_shooting();
+  }
+  else if (pers.dx == 0 && pers.dy == 0){
+    pers.draw_neutre();
+  }
+  else {
+    pers.draw_move();
+  }
+  
+////////////////////////////////////////////////////////////////////////
   pers.move();
   pers.colide();
+  ////// gestion des tirs /////////////////////////////
   b.draw_bullet();
   b.travel();
   b.colide_bullet();
+  ////////////////////////////////////////////////
   // obstacles 
   obst.forEach(element => {
     element.draw_obstacle();
