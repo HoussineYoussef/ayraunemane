@@ -4,10 +4,14 @@ window.addEventListener('keydown', handleKeydown, false);
 window.addEventListener('keyup', handleKeyup, false);
 let canvas;
 const obst = [];
+const chargeur = [];
 var gameStatus=0;
 var score=0;
 var seconds=0;
 var milisecond=0;
+var premierTir = 0 ; 
+var dernierTir = 1;
+
 canvas = document.querySelector("#Canvas");
   
 //context graphique
@@ -35,10 +39,10 @@ function handleKeydown(evt) {
       m.bouton_jouer()
       break;
       case 32:
-        if (b.x > 1000){
-           b.shoot();
+      
+      b.shoot();
            
-        }
+        
       break;
   }
 }
@@ -117,9 +121,13 @@ function anime60fps() {
   pers.move();
   pers.colide();
   ////// gestion des tirs /////////////////////////////
-  b.draw_bullet();
-  b.travel();
-  b.colide_bullet();
+  chargeur.forEach(b => {
+    b.draw_bullet();
+    b.travel();
+    b.colide_bullet();
+    
+  });
+  
   ////////////////////////////////////////////////
   // obstacles 
   obst.forEach(element => {
@@ -147,6 +155,7 @@ function init() {
   pers = new perso(300,180,0,0,ctx);
   m = new menu();
   b = new bullet (1100,-1000,7,ctx);
+
   
   for(let i = 0; i < 40; i++) {
     obst[i] = new obstacle(
