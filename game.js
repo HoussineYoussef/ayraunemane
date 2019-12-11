@@ -8,7 +8,9 @@ const chargeur = [];
 var gameStatus=0;
 var score=0;
 var seconds=0;
-var milisecond=0;
+var compteurFPS = 0;
+
+
 var premierTir = 0 ; 
 var dernierTir = 1;
 
@@ -40,7 +42,7 @@ function handleKeydown(evt) {
       break;
       case 32:
       
-      b.shoot();
+      pers.shoot();
            
         
       break;
@@ -99,15 +101,17 @@ function anime60fps() {
   }
   else if (gameStatus == 1){
    
-  seconds++;
-  milisecond++;
+  compteurFPS++;
+  seconds = compteurFPS/60;
+  
   ctx.drawImage(background,0,0); // on place le fond 
   ctx.font = "30px Arial";
   ctx.fillStyle = "red";
   ctx.fillText("Score : " + score,10,30);
-  ctx.fillText("Temps : " + Math.round(seconds/60),200,30);
+  ctx.fillText("Temps : " + Math.round(seconds),200,30);
   //Fonction pour dessiner ! 
-  if (b.x < pers.x + 130){
+  ////////////////////////////bloc à modifier /////////////////////////////////////
+  if (pers.isShooting == 1){
     pers.draw_shooting();
   }
   else if (pers.dx == 0 && pers.dy == 0){
@@ -116,7 +120,7 @@ function anime60fps() {
   else {
     pers.draw_move();
   }
-  
+  /////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
   pers.move();
   pers.colide();

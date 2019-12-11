@@ -6,6 +6,9 @@ class perso {
       this.dx = dx;
       this.dy = dy;
       this.ctx = ctx;
+      this.firstShot = 0;
+      this.lastShot = 1;
+      this.isShooting = 0;
       this.imageShoot = new Image();
     this.imageShoot.src = 'ressource/ironman_shoot.png';
     this.imageNeutre = new Image();
@@ -62,6 +65,22 @@ class perso {
       });
       
      
+    }
+    shoot(){
+      if((this.lastShot - this.firstShot) >= 0.5){
+        this.firstShot = this.lastShot ;
+        
+        chargeur.push(new bullet(pers.x,pers.y,6,ctx));
+        b.x = pers.x;
+        b.y = pers.y;
+        b.shoot_sound.play();
+        
+      }
+      this.lastShot = seconds;
+      console.log(chargeur.length);
+      
+
+      
     }
   }
   /////////////////////////////////////////////////////////////

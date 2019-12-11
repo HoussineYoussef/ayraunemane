@@ -9,6 +9,8 @@ class bullet {
       this.image.src = 'ressource/beam.png';
       this.shoot_sound = new Audio("ressource/shoot.mp3");
       this.shoot_sound.volume = 0.1;
+      
+      
     }
       draw_bullet(){
        ctx.drawImage(this.image, this.x, this.y,60,13);
@@ -30,20 +32,23 @@ class bullet {
         });
 
       }
-    travel(){
-        this.x += this.dx;
-    }
-    shoot(){
-      
-        chargeur.push(new bullet(pers.x,pers.y,6,ctx));
-        this.x = pers.x;
-        this.y = pers.y;
-        this.shoot_sound.play();
-        
-        
 
-      
-    }
+      travel(){
+          this.x += this.dx;
+          if(this.x > 1000){
+            var index = chargeur.indexOf(this);
+                      chargeur.splice(index,1);
+          }
+
+          if(this.x < pers.x + 130){
+            pers.isShooting = 1;
+          }
+          else{
+            pers.isShooting = 0;
+          }
+          
+        }
+    
 
       
       
