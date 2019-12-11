@@ -5,6 +5,7 @@ window.addEventListener('keyup', handleKeyup, false);
 let canvas;
 const obst = [];
 const chargeur = [];
+const meteo = [] ;
 var gameStatus=0;
 var score=0;
 var seconds=0;
@@ -131,7 +132,13 @@ function anime60fps() {
     b.colide_bullet();
     
   });
-  
+  //////////////////meteores //////////////
+  meteo.forEach(mete=> {
+    mete.draw_meteora();
+    mete.move_meteora();
+    mete.repop_meteora();
+    mete.boost_meteora();
+  });
   ////////////////////////////////////////////////
   // obstacles 
   obst.forEach(element => {
@@ -159,8 +166,12 @@ function init() {
   pers = new perso(300,180,0,0,ctx);
   m = new menu();
   b = new bullet (1100,-1000,7,ctx);
+  ////////////créations météores ////////////////////
+  for(let j = 0;j<3 ; j++){
+    meteo[j] = new meteora (3,2,ctx);
+  }
 
-  
+  //// création obstacles ./////////////////
   for(let i = 0; i < 40; i++) {
     obst[i] = new obstacle(
                           -1,

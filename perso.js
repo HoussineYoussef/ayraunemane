@@ -63,7 +63,17 @@ class perso {
        }
         
       });
-      
+      meteo.forEach(m => {
+        //ligne à changer en fonction du sprite 
+        if (pers.x < m.x +  35 &&
+          pers.x + 35 > m.x &&
+          pers.y < m.y +  35 &&
+          35 + pers.y > m.y) {
+           // collision détectée !
+           gameStatus = 2;
+       }
+        
+      });
      
     }
     shoot(){

@@ -7,7 +7,7 @@ class obstacle {
     this.ctx = ctx;  
     this.image = new Image();
     this.image.src = 'ressource/missile.png';
-
+    
     
   }
   draw_obstacle(){
