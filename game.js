@@ -132,7 +132,6 @@ function anime60fps() {
     b.colide_bullet();
     
   });
-  
   //////////////////meteores //////////////
   meteo.forEach(mete=> {
     mete.draw_meteora();
