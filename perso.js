@@ -6,12 +6,26 @@ class perso {
       this.dx = dx;
       this.dy = dy;
       this.ctx = ctx;
+      this.firstShot = 0;
+      this.lastShot = 1;
+      this.isShooting = 0;
+      this.imageShoot = new Image();
+    this.imageShoot.src = 'ressource/ironman_shoot.png';
+    this.imageNeutre = new Image();
+    this.imageNeutre.src = 'ressource/ironman_neutre.png';
+    this.imageMove = new Image();
+    this.imageMove.src = 'ressource/ironman_move.png';
       
       
     }
-    draw(){
-      ctx.fillStyle = "red"; 
-      ctx.fillRect(this.x,this.y,30,30);
+    draw_neutre(){
+      ctx.drawImage(this.imageNeutre, this.x, this.y,30,30);
+    }
+    draw_shooting(){
+      ctx.drawImage(this.imageShoot, this.x, this.y-2,34,34);
+    }
+    draw_move(){
+      ctx.drawImage(this.imageMove, this.x, this.y,33,33);
     }
     move(){
       // gestion mouvement vertical du personnage 
@@ -42,15 +56,41 @@ class perso {
         //ligne à changer en fonction du sprite 
         if (pers.x < element.x +  29 &&
           pers.x + 29 > element.x &&
-          pers.y < element.y +  29 &&
-          29 + pers.y > element.y) {
+          pers.y < element.y +  24 &&
+          24 + pers.y > element.y) {
            // collision détectée !
            gameStatus = 2;
        }
         
       });
-      
+      meteo.forEach(m => {
+        //ligne à changer en fonction du sprite 
+        if (pers.x < m.x +  35 &&
+          pers.x + 35 > m.x &&
+          pers.y < m.y +  35 &&
+          35 + pers.y > m.y) {
+           // collision détectée !
+           gameStatus = 2;
+       }
+        
+      });
      
+    }
+    shoot(){
+      if((this.lastShot - this.firstShot) >= 0.5){
+        this.firstShot = this.lastShot ;
+        
+        chargeur.push(new bullet(pers.x,pers.y,6,ctx));
+        b.x = pers.x;
+        b.y = pers.y;
+        b.shoot_sound.play();
+        
+      }
+      this.lastShot = seconds;
+      console.log(chargeur.length);
+      
+
+      
     }
   }
   /////////////////////////////////////////////////////////////
