@@ -25,7 +25,7 @@ class meteora {
         if(this.x < -50 || this.y > 550 ){
           this.x = Math.floor(Math.random()*1500);
           this.y = Math.floor(Math.random()* (-1000));
-          this.dy = 2;
+          this.dy = 2; // on reset la vitesse sinon ça croit vers l'infini et l'au dela
         
         }
         
@@ -44,6 +44,7 @@ class meteora {
            }
         });
     }
+    //methode accélération 
     boost_meteora(){
       this.dx += 0.0005;
   

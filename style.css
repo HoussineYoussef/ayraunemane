@@ -5,6 +5,7 @@ header .main-nav{
 	width: 100%;
 	z-index: 4000;
 }
+html { overflow-y: auto}
 header .main-nav-scrolled{
 	background-color: rgba(0,0,0,0.4);
 }

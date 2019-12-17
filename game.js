@@ -27,16 +27,20 @@ function handleKeydown(evt) {
   switch(evt.keyCode){
       case 38://haut
       pers.dy = -3;
+      evt.preventDefault();
       break;
       case 40://bas
       pers.dy = 3;
+      evt.preventDefault();
       break;
       case 37://gauche
       pers.dx = -3;
+      evt.preventDefault();
       
       break;
       case 39://droite
       pers.dx = 3;
+      evt.preventDefault();
       break;
       case 13:
       m.bouton_jouer()
