@@ -1,9 +1,10 @@
 class meteora {
     constructor(dx , dy , ctx){
       this.x =Math.floor (Math.random()*1000 + 1000);
-      this.y = Math.floor(Math.random() * 500); 
+      this.y = Math.floor(Math.random() * 500 + 500); 
       this.dx = dx;
       this.dy = dy;
+     
       this.ctx = ctx;  
       this.meteora = new Image();
       this.meteora.src = 'ressource/meteora.png';

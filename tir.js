@@ -28,6 +28,7 @@ class bullet {
                     var index = chargeur.indexOf(this);
                     chargeur.splice(index,1);
                     score++;
+                    pers.isShooting = 0;
                 }
         });
 

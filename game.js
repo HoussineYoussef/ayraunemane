@@ -171,7 +171,7 @@ function init() {
   m = new menu();
   b = new bullet (1100,-1000,7,ctx);
   ////////////créations météores ////////////////////
-  for(let j = 0;j<3 ; j++){
+  for(let j = 0;j<2 ; j++){
     meteo[j] = new meteora (3,2,ctx);
   }
 
