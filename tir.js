@@ -21,8 +21,8 @@ class bullet {
         obst.forEach(element => {
             if (this.x < element.x +  50 &&
                 this.x + 50 > element.x &&
-                this.y < element.y +  14 &&
-                14 + this.y > element.y){
+                this.y < element.y +  20 &&
+                20 + this.y > element.y){
                     element.x = Math.floor(Math.random()*300 + 1000);
                     element.y = Math.floor(Math.random()*500);
                     var index = chargeur.indexOf(this);

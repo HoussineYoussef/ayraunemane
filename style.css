@@ -4,14 +4,16 @@ header .main-nav{
 	left: 0;
 	width: 100%;
 	z-index: 4000;
+	height: 120px;
 }
-html { overflow-y: auto}
+
 header .main-nav-scrolled{
 	background-color: rgba(0,0,0,0.4);
 }
 .navbar-light .navbar-nav .nav-link{
 	color: #fff;
 }
+
 .navbar-light .navbar-nav .active .nav-link{
 	color: #00e0d0;
 }
@@ -23,7 +25,7 @@ body{
 }
 
 .footer-basic {
-	padding:40px 0;
+	padding:20px 0;
 	background-color:rgb(220, 53,69);
   }
   
@@ -84,7 +86,7 @@ body{
 
 
 #canvas{
-	padding-top: 300px;
+	padding-top: 120px;
 	
 	padding-left: 0;
     padding-right: 0;
