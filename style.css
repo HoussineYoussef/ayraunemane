@@ -4,7 +4,7 @@ header .main-nav{
 	left: 0;
 	width: 100%;
 	z-index: 4000;
-	height: 120px;
+	height: 50px;
 }
 
 header .main-nav-scrolled{
@@ -26,6 +26,8 @@ body{
 
 .footer-basic {
 	padding:20px 0;
+	margin-bottom: 0px;
+	
 	background-color:rgb(220, 53,69);
   }
   

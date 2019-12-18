@@ -4,6 +4,7 @@ class obstacle {
     this.y = Math.floor(Math.random() * 500); 
     this.dx = dx;
     this.dy = dy;
+  
     this.ctx = ctx;  
     this.image = new Image();
     this.image.src = 'ressource/missile.png';
