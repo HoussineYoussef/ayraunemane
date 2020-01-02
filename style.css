@@ -97,6 +97,27 @@ body{
 	margin-right: auto;
 	display: block;
 }
+#health{
+	background-color: green;
+}
+#pdv {
+	display:inline-block; 
+	width:200px; 
+	height:120px;
+	  
+	  float: inline-end;
+	
+	}
+
+	#divCanvas {
+	display:inline-block; 
+	width:250px; 
+	height:120px;
+	margin : center ;
+	  
+	}
+  
+ 
 *{
 	padding: 0;
 	margin: 0;
@@ -166,3 +187,4 @@ body{
 	  
 		color: rgb(110, 1,21);
 	}
+}

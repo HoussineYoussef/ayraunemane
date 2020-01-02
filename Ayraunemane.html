@@ -19,10 +19,11 @@
       <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+        
       <header>
          <nav class="navbar navbar-expand-lg navbar-light bg-danger text-light py-3 main-nav">
             <div class="container">
-              <a class="navbar-brand" href="Ayraunemane.html"><img height="100" width="100" src="./ressource/icone.png" alt="Logo"></a>
+              <a class="navbar-brand" href="Ayraunemane.html"><img height="100" width="100" src="./ressource/img/icone.png" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -44,8 +45,17 @@
             </div>
           </nav>
       </header>
+     
+      
+      <div id = "pdv">
+      <label for="file">Points de vie</label>
+        <progress id="health" value="100" max="100"></progress>
+      </div>
 
+      <div id = "divCanvas">
       <canvas id="Canvas" width="1000" height="500"> </canvas>
+      </div>
+      
 
      
       
@@ -58,6 +68,7 @@
   <script src="obstacle.js"></script>
   <script src="tir.js"></script>
   <script src="meteora.js"></script>
+  <script src="bonus.js"></script>
 
 </body>
 </html>

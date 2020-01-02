@@ -2,25 +2,40 @@ window.onload = init;
 
 window.addEventListener('keydown', handleKeydown, false);
 window.addEventListener('keyup', handleKeyup, false);
+
+let health = document.getElementById("health");
+
+// init listes et vars
 let canvas;
 const obst = [];
 const chargeur = [];
 const meteo = [] ;
+
+
+
+//jeu
 var gameStatus=0;
+
+
+// compteurs
 var score=0;
 var seconds=0;
 var compteurFPS = 0;
 
-
+//gestion tirs
 var premierTir = 0 ; 
 var dernierTir = 1;
 
+
+//gestion bonus
+//var typeBonus = Math.floor (Math.random()*5);
+var typeBonus = 2;
 canvas = document.querySelector("#Canvas");
   
 //context graphique
 ctx = canvas.getContext("2d");
 var background = new Image();
-background.src = "ressource/background.png";
+background.src = "ressource/img/background.png";
 
 
 function handleKeydown(evt) {
@@ -90,6 +105,8 @@ function handleKeyup(evt) {
 
 
 function anime60fps() {
+  
+
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   
   
@@ -105,7 +122,7 @@ function anime60fps() {
 
   }
   else if (gameStatus == 1){
-   
+  
   compteurFPS++;
   seconds = compteurFPS/60;
   
@@ -114,6 +131,9 @@ function anime60fps() {
   ctx.fillStyle = "red";
   ctx.fillText("Score : " + score,10,30);
   ctx.fillText("Temps : " + Math.round(seconds),200,30);
+  ctx.fillText("Vie : " + pers.hp,400,30);
+
+  
   //Fonction pour dessiner ! 
   ////////////////////////////bloc à modifier /////////////////////////////////////
   if (pers.isShooting == 1){
@@ -152,6 +172,10 @@ function anime60fps() {
     element.boost();
     
   });
+  //gestion bonus 
+  bon.bonusing();
+  bon.draw_bonus();
+  
   
 }
   
@@ -167,6 +191,7 @@ function init() {
   
   // après
   requestAnimationFrame(anime60fps);
+  bon = new bonus(typeBonus,ctx);
   pers = new perso(300,180,0,0,ctx);
   m = new menu();
   b = new bullet (1100,-1000,7,ctx);
