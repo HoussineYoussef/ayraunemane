@@ -42,14 +42,14 @@ body{
   
   .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	max-width: 228px;
+	max-width: 202px;
 	max-height: 509px;
-	margin: auto;
 	text-align: center;
 	font-family: arial;
 	margin-top: 300px;
 	margin-bottom: 150px;
 	float:left;
+
   }
   
   .title {
@@ -81,16 +81,12 @@ body{
   }
 
 #container{
-	padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-	margin-right: auto;
+    margin-left: 35%;
+	margin-right: 35%;
 }
-
 
 #canvas{
 	padding-top: 120px;
-	
 	padding-left: 0;
     padding-right: 0;
     margin-left: auto;
