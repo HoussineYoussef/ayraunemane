@@ -5,16 +5,18 @@ class perso {
       this.y = y; 
       this.dx = dx;
       this.dy = dy;
+      this.hp = 5;
       this.ctx = ctx;
       this.firstShot = 0;
       this.lastShot = 1;
+      
       this.isShooting = 0;
       this.imageShoot = new Image();
-    this.imageShoot.src = 'ressource/ironman_shoot.png';
+    this.imageShoot.src = 'ressource/img/ironman_shoot.png';
     this.imageNeutre = new Image();
-    this.imageNeutre.src = 'ressource/ironman_neutre.png';
+    this.imageNeutre.src = 'ressource/img/ironman_neutre.png';
     this.imageMove = new Image();
-    this.imageMove.src = 'ressource/ironman_move.png';
+    this.imageMove.src = 'ressource/img/ironman_move.png';
       
       
     }
@@ -58,8 +60,15 @@ class perso {
           pers.x + 29 > element.x &&
           pers.y < element.y +  24 &&
           24 + pers.y > element.y) {
+            element.x = Math.floor(Math.random()*300 + 1000);
+            element.y = Math.floor(Math.random()*500);
            // collision détectée !
+           this.hp -= 1;
+           let health = document.getElementById("health")
+            health.value -= 20;
+           if (this.hp <= 0) {
            gameStatus = 2;
+           }
        }
         
       });
@@ -70,7 +79,12 @@ class perso {
           pers.y < m.y +  35 &&
           35 + pers.y > m.y) {
            // collision détectée !
+           let health = document.getElementById("health")
+            health.value = 0;
+           
            gameStatus = 2;
+           
+       
        }
         
       });

@@ -1,13 +1,13 @@
 class menu{
   constructor(){
     this.background_debut = new Image();
-    this.background_debut.src = "ressource/background_debut.png";
+    this.background_debut.src = "ressource/img/background_debut.png";
     this.background_fin = new Image();
-    this.background_fin.src = "ressource/background_fin.png";
-    this.music_debut = new Audio("ressource/soundtrack_debut.mp3");
-    this.musique = new Audio("ressource/soundtrack.mp3");
+    this.background_fin.src = "ressource/img/background_fin.png";
+    this.music_debut = new Audio("ressource/son/soundtrack_debut.mp3");
+    this.musique = new Audio("ressource/son/soundtrack.mp3");
     this.musique.loop = true;
-    this.musique_fin = new Audio("ressource/soundtrack_fin.mp3");
+    this.musique_fin = new Audio("ressource/son/soundtrack_fin.mp3");
 
   }
   menu(){
@@ -49,8 +49,8 @@ class menu{
     this.music_debut.pause();
     this.musique.play();
    
-    
+    if(gameStatus != 2){
     gameStatus = 1;
-
+    }
   }
 }

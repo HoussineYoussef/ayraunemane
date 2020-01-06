@@ -7,7 +7,7 @@ class obstacle {
   
     this.ctx = ctx;  
     this.image = new Image();
-    this.image.src = 'ressource/missile.png';
+    this.image.src = 'ressource/img/missile.png';
     
     
   }
@@ -43,7 +43,7 @@ class obstacle {
       });
   }
   boost(){
-    this.dx += -0.0005;
+    this.dx += -0.0008;
 
   }
 }

@@ -7,7 +7,7 @@ class meteora {
      
       this.ctx = ctx;  
       this.meteora = new Image();
-      this.meteora.src = 'ressource/meteora.png';
+      this.meteora.src = 'ressource/img/meteora.png';
       
   
       

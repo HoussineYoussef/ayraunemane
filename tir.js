@@ -6,8 +6,8 @@ class bullet {
       this.dx = dx;
       this.ctx = ctx;
       this.image = new Image();
-      this.image.src = 'ressource/beam.png';
-      this.shoot_sound = new Audio("ressource/shoot.mp3");
+      this.image.src = 'ressource/img/beam.png';
+      this.shoot_sound = new Audio("ressource/son/shoot.mp3");
       this.shoot_sound.volume = 0.1;
       
       
