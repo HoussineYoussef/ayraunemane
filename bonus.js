@@ -13,9 +13,11 @@ class bonus {
         this.sablier.src = 'ressource/img/sablier.png';
         this.vie = new Image();
         this.vie.src = 'ressource/img/vie.png';
-
-
-
+        
+        this.son_bomb = new Audio("ressource/son/bonus/nuke.mp3");
+        this.son_sablier = new Audio("ressource/son/bonus/timer.mp3");
+        this.son_vie = new Audio("ressource/son/bonus/life.mp3");
+        
 
 
     }
@@ -45,7 +47,7 @@ class bonus {
             if (typeBonus == 0) {
 
                 // collision détectée !
-
+                this.son_bomb.play();
                 obst.forEach(element => {
                     element.x = Math.floor(Math.random() * 300 + 2500);
                     element.y = Math.floor(Math.random() * 500);
@@ -53,6 +55,7 @@ class bonus {
                 })
             }
             if (typeBonus == 1 || typeBonus == 2 || typeBonus == 3) {
+                this.son_sablier.play();
                 obst.forEach(element => {
                     element.dx = element.dx + 0.1;
 
@@ -61,6 +64,7 @@ class bonus {
 
             }
             if (typeBonus == 4) {
+                this.son_vie.play();
                 if (pers.hp < 5){
                 pers.hp += 1;
                 

@@ -48,7 +48,7 @@ class menu{
   bouton_jouer(){
     this.music_debut.pause();
     this.musique.play();
-   
+    this.musique.volume = 0.2;
     if(gameStatus != 2){
     gameStatus = 1;
     }
