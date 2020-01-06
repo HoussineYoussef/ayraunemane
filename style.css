@@ -86,7 +86,7 @@ body{
 }
 
 #canvas{
-	padding-top: 120px;
+	
 	padding-left: 0;
     padding-right: 0;
     margin-left: auto;
@@ -94,19 +94,20 @@ body{
 	display: block;
 }
 #health{
-	background-color: green;
+	background-color: red;
 }
 #pdv {
 	display:inline-block; 
 	width:200px; 
 	height:120px;
-	  
-	  float: inline-end;
+	background-color: #FFFFA43B;
+	
 	
 	}
 
 	#divCanvas {
 	display:inline-block; 
+	margin-top: 120px;
 	width:250px; 
 	height:120px;
 	margin : center ;
