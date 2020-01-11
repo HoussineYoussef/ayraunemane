@@ -57,7 +57,7 @@ class bonus {
             if (typeBonus == 1 || typeBonus == 2 || typeBonus == 3) {
                 this.son_sablier.play();
                 obst.forEach(element => {
-                    element.dx = element.dx + 0.1;
+                    element.dx = element.dx + 0.2;
 
                 })
 
