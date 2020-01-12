@@ -148,7 +148,6 @@ body{
 	font-size: 30px;
 	  color: #E91E63;
 	  font-weight: bold;
-	  font-family: cursive;
 	  animation: text2 3s 1;
   }
   @keyframes text {
@@ -184,4 +183,28 @@ body{
 	  
 		color: rgb(110, 1,21);
 	}
+}
+
+#command1{
+	margin-top: 120px;
+	margin : center ;
+	margin-left: 40%;
+	margin-right: 40%;
+	display:inline-block;
+	
+}
+#command2{
+	margin-top: 120px;
+	margin : center ;
+	margin-left: 30%;
+	margin-right: 30%;
+	display:inline-block;
+}
+#textCommand{
+	text-align: center;
+	font-size: 30px;
+	  color: #E91E63;
+	  font-weight: bold;
+	  margin-left: 31%;
+	margin-right: 30%;
 }
